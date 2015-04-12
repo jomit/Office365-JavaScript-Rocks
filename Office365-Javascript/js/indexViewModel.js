@@ -7,7 +7,7 @@
     O365JS.indexViewModel = (function () {
         var accessToken = ko.observable();
         var myDocuments = ko.observableArray();
-        var apiUrl = 'https://devfun-my.sharepoint.com/_api/v1.0/me/files';
+        var apiUrl = 'https://<your o365 domain here>-my.sharepoint.com/_api/v1.0/me/files';
 
         function initialize() {
             var token = O365JS.core.getAccessTokenFromUrl();
